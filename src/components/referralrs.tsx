@@ -10,14 +10,14 @@ interface Data {
 }
 
 const data: Data[] = [
-	// {
-	// 	name: 'Joaquin Marmol',
-	// 	position: 'Frontend Developer',
-	// 	description:
-	// 		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam similique praesentium nam, dolorem quis assumenda atque officia fugiat expedita tenetur incidunt distinctio dolore earum, tempora facilis. Numquam, in velit.',
-	// 	github: 'https://github.com/JoaquinMarmol',
-	// 	linkedin: 'https://www.linkedin.com/in/joaquin-marmol/',
-	// },
+	{
+		name: 'Joaquin Marmol',
+		position: 'Frontend Developer',
+		description:
+			'During our time at Upler, a startup specializing in software license management, I had the pleasure of collaborating closely with Serafín. His expertise in frontend development, coupled with his background in the Certified Tech Developer (CTD) program, made him an invaluable asset to our team. Serafín consistently demonstrated dedication, technical proficiency, and a positive attitude, which significantly contributed to the success of our projects. I wholeheartedly recommend Serafín for any future opportunities, confident in his ability to code and make meaningful contributions.',
+		github: 'https://github.com/JoaquinMarmol',
+		linkedin: 'https://www.linkedin.com/in/joaquin-marmol/',
+	},
 	{
 		name: 'Tomas Bernandin',
 		position: 'Backend Developer',
@@ -52,7 +52,7 @@ const Referrals: FC = () => {
 						<ol className="mt-5 flex w-full flex-col gap-8 lg:flex-row">
 							{data.map((d) => (
 								<li
-									className="w-full md:w-4/5 rounded-md bg-gradient-to-l from-stone-700 to-stone-900 to-[70%] px-4 py-3 "
+									className="w-full rounded-md bg-gradient-to-l from-stone-700 to-stone-900 to-[70%] px-4 py-3 md:w-4/5 "
 									key={d.name}
 								>
 									<ReferredCard
